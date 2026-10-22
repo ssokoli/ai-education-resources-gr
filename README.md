@@ -11,7 +11,7 @@ Everything in this collection is free to use, adapt, and share. You can use it i
 | Name | Description | Age group | Duration | Open it |
 | --- | --- | --- | --- | --- |
 | Level Up: AI & You | An interactive, game-style 60-minute session where teams earn XP while learning how AI works, how it can be biased, and how to spot AI-powered scams and fake profiles. | 12–16 | 60 minutes | [Open it](https://julia-io.github.io/ai-education-resources/Sessions/Level-Up-AI-and-You.html) |
-| Level Up: Η ΤΝ κι εσύ (Greek adaptation) | The same session adapted for Greek schools: Greek text, Greek examples, English→Greek translation bias, Greek scams and helplines. | 12–16 | 60 minutes | [Open it](Sessions/Level-Up-AI-kai-Esy.html) |
+| Level Up: Η ΤΝ κι εσύ (Greek adaptation) | The same session adapted for Greek schools: Greek text, Greek examples, English→Greek translation bias, Greek scams and helplines. | 12–16 | 60 minutes | [Open it](https://ssokoli.github.io/ai-education-resources-gr/Sessions/Level-Up-AI-kai-Esy.html) |
 
 ## How to use
 
@@ -44,6 +44,8 @@ If you use these resources, we would love to hear how they went. Please open an 
 ## Ελληνική προσαρμογή
 
 **Level Up: Η ΤΝ κι εσύ** είναι η ελληνική προσαρμογή του *Level Up: AI & You* της Julia Díez. Είναι ένα παιχνίδι 60 λεπτών σε ομάδες για μαθητές 12–16 ετών (Γυμνάσιο, Α΄ Λυκείου): πώς δουλεύει η τεχνητή νοημοσύνη, πώς προκύπτει η προκατάληψη, και πώς αναγνωρίζουμε απάτες και ψεύτικα προφίλ που φτιάχνονται με ΤΝ.
+
+Άνοιγμα: https://ssokoli.github.io/ai-education-resources-gr/Sessions/Level-Up-AI-kai-Esy.html
 
 Αρχείο: [`Sessions/Level-Up-AI-kai-Esy.html`](Sessions/Level-Up-AI-kai-Esy.html)
 
