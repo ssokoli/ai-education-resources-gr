@@ -8,7 +8,7 @@
 <!--
   Ελληνική προσαρμογή του "Level Up: AI & You" της Julia Díez
   (https://github.com/Julia-IO/ai-education-resources), CC BY 4.0.
-  Αλλαγές: μετάφραση στα ελληνικά, ελληνικά παραδείγματα (ποίημα, μετάφραση αγγλικά→ελληνικά,
+  Αλλαγές: μετάφραση στα ελληνικά, ελληνικά παραδείγματα (μετάφραση αγγλικά→ελληνικά,
   απάτες, γραμμές βοήθειας), γραμματοσειρές με ελληνικούς χαρακτήρες, επικόλληση ζωντανής
   μηχανικής μετάφρασης στο Επίπεδο 3. Η λίστα αλλαγών βρίσκεται στο README.
 -->
@@ -341,9 +341,9 @@ const SCHOOL_SIGN="3ο ΓΥΜΝΑΣΙΟ"; /* the sign behind the student in Boss
 const L1_ROUNDS=[
   {t:"Δύο ποιήματα για τη θάλασσα",hint:"Διαβάστε τα δυνατά. Ποιο το έγραψε μηχανή;",ai:"B",
    items:{
-    A:{text:"Εδώ ας σταθώ. Κι ας δω κ’ εγώ την φύσι λίγο.\nΘάλασσας του πρωιού κι ανέφελου ουρανού\nλαμπρά μαβιά, και κίτρινη όχθη· όλα\nωραία και μεγάλα φωτισμένα.\n\nΕδώ ας σταθώ. Κι ας γελασθώ πως βλέπω αυτά\n(τα είδ’ αλήθεια μια στιγμή σαν πρωτοστάθηκα)·\nκι όχι κ’ εδώ τες φαντασίες μου,\nτες αναμνήσεις μου, τα ινδάλματα της ηδονής.",credit:"Κ.Π. Καβάφης, «Θάλασσα του πρωιού», 1915"},
-    B:{text:"Η θάλασσα ψιθυρίζει απαλά,\nμε κύματα ασημένια και γαλανά,\nκάτω απ’ τον ήλιο τον χρυσό\nχορεύει ως το σούρουπο το γλυκό.\n\nΟι γλάροι πετούν ψηλά στον ουρανό,\nτο κύμα φέρνει ένα όνειρο μακρινό,\nκι όποια καρδιά ακούσει τη φωνή της\nθυμάται πάντα τον δρόμο της ζωής της.",credit:"Γράφτηκε από ΤΝ (Claude) για αυτό το παιχνίδι, σε δευτερόλεπτα"}},
-   tells:"Δείτε τη διαφορά: το ποίημα του ανθρώπου είναι παράξενο και απρόβλεπτο. Έχει παλιές λέξεις (φύσι, τες), μια μπερδεμένη πρόταση και μια παρένθεση, και στο τέλος δεν μιλάει καν για τη θάλασσα αλλά για αναμνήσεις. Το ποίημα της ΤΝ είναι στρωτό, κάνει τέλεια ρίμα και χρησιμοποιεί τις πιο αναμενόμενες λέξεις: ψιθυρίζει, ασημένια, χρυσό, όνειρο. Αυτό είναι πρόβλεψη. Προσοχή: και το παλιό ύφος μπορεί να το μιμηθεί η ΤΝ, αν της το ζητήσεις."},
+    A:{text:"I started Early – Took my Dog –\nAnd visited the Sea –\nThe Mermaids in the Basement\nCame out to look at me –\n\nAnd Frigates – in the Upper Floor\nExtended Hempen Hands –\nPresuming Me to be a Mouse –\nAground – upon the Sands –",lang:"en",credit:"Emily Dickinson, γύρω στο 1862"},
+    B:{text:"The ocean whispers soft and low,\nIts silver waves in endless flow,\nBeneath the sky of golden light,\nIt dances gently into night.\n\nThe seagulls call, the breezes play,\nThe tide returns at close of day,\nAnd every heart that hears its song\nRemembers where it all belongs.",lang:"en",credit:"Γράφτηκε από ΤΝ (Claude) για αυτό το παιχνίδι, σε δευτερόλεπτα"}},
+   tells:"Δείτε τη διαφορά: το ποίημα του ανθρώπου είναι παράξενο και απρόβλεπτο (γοργόνες στο υπόγειο, παύλες παντού). Το ποίημα της ΤΝ είναι στρωτό, κάνει τέλεια ρίμα και χρησιμοποιεί τις πιο αναμενόμενες λέξεις: whispers, silver, golden, endless. Αυτό είναι πρόβλεψη."},
   {t:"Δύο πρόσωπα",hint:"Κοιτάξτε αυτιά, δόντια, άκρες των μαλλιών και το φόντο."},
   {t:"Δύο κριτικές για τα ίδια αθλητικά παπούτσια",hint:"Ποια ακούγεται σαν αληθινός άνθρωπος που τα φόρεσε;"},
   {t:"Δύο ηχητικά",hint:"Ακούστε τα δύο φορές. Ανάσες, παύσεις, συναίσθημα."},
@@ -450,7 +450,7 @@ const SLIDES=[
  {lv:"Επίπεδο 1",r:()=>{const r=S.l1.r,R=L1_ROUNDS[r],key=S.l1.key[r]||R.ai||"A",rev=S.l1.rev[r],shown=S.l1.show[r]||{};
   const cls=l=>rev?(l===key?"is-ai":"is-human"):"";
   const lab=l=>{const it=R.items&&R.items[l];let h="";
-    if(it&&shown[l])h+=`<span class="poem">${it.text.split("\n").map(x=>x?`<span class="pl">${esc(x)}</span>`:`<span class="pl gap"></span>`).join("")}</span>`;
+    if(it&&shown[l])h+=`<span class="poem"${it.lang?` lang="${it.lang}"`:""}>${it.text.split("\n").map(x=>x?`<span class="pl">${esc(x)}</span>`:`<span class="pl gap"></span>`).join("")}</span>`;
     else h+=`<span class="muted">${it?"Πατήστε για να δείτε το "+l:"Δείξτε το "+l}</span>`;
     if(rev)h+=`<span class="verdict" style="color:${l===key?"var(--danger)":"var(--safe)"}">${l===key?"Το έφτιαξε ΤΝ":"Το έφτιαξε άνθρωπος"}</span>${it?`<span class="note">${esc(it.credit)}</span>`:""}`;
     return h;};
